@@ -20,6 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        test.java.srcDirs += 'src/test/kotlin'  // 如果不是默认（src/test/java）的话，加上测试代码的路径
+    }
 }
 
 dependencies {
